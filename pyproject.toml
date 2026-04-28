@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sample_size_planning"
+version = "0.1.0"
+description = "Bayesian estimation of the number of latent categories (patterns) and sample-size planning from partial observations."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Shuonan Chen" }]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.8",
+    "matplotlib>=3.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
